@@ -1,0 +1,9 @@
+#character_list .character img {
+    width: 100px;
+}
+
+.character {
+    float: left;
+    padding: 25px;
+    max-width: 100px;
+}
