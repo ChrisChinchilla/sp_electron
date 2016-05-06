@@ -16,9 +16,9 @@ var characterHTML = (character)=> `
   </div>`;
 
 fetch(url)
-    .then((resp)=> resp.json())
-    .then((json)=> json.data.results)
-    .then((characters)=> {
+    .then(resp => resp.json())
+    .then(json => json.data.results)
+    .then(characters => {
         var html = characters.map(characterHTML).join('');
         var characterList = document.getElementById("character_list");
         characterList.innerHTML = html;
